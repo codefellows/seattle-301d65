@@ -127,18 +127,15 @@ console.log(objectLit());
 
 
 let sumAndProduct = (a, b) => {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
+ return [a + b, a * b];
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sumAndProduct(3, 9));
 
 
-let message = name => {
-  return `Hello, ${name}!`;
-};
+let message = name => `Hello, ${name}!`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(message('Allie'));
@@ -172,12 +169,10 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = function() {
-  return 'This student is enrolled in Code 301.';
-};
+Student.courseName = () => 'This student is enrolled in Code 301.';
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
+console.log(Student.courseName());
 
 
 
