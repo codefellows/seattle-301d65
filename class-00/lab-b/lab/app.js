@@ -177,23 +177,23 @@ console.log(Student.courseName());
 
 
 // STEP 11
-// How do arrow functions affect constructor functions?
+// How do arrow functions affect constructor functions? - ANS: They will not work as JS will throw error. Arrow functions do not have a 'this', there is no object to work off of when using arrow functions. In a constructor, the 'this' keyword refers back to the object that called the function. If arrow functions have no "this" then they certainly don't have a "new".
 Student.prototype.scope = function() {
   console.log(this);
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// The "this" refers to the instance that we created of the Joe Object
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// The "this" refers to the window of the browser in this case because there is no other object refered to using the arrow function. The arrow function can only work off of the parent, which in this case is the browser window.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// Well, arrow functions don't have a "this" so the "this" in an arrow function changes to represent the object that created the arrow function. In the example above, the window is the owner of the function. In other cases it could be something else although I am not sure of other examples quite yet.
