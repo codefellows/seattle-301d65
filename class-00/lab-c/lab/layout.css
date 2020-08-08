@@ -1,0 +1,44 @@
+main p {
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  text-indent: 30px;
+  margin: 20px 0px;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 13px;
+  background-image: url('../img/hr.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section hr {
+  border-bottom: 1px solid #eee;
+  height: 0;
+}
+
+
+
+footer section p{
+  padding: 50px 0;
+  line-height: 1.5em;
+  text-align: center;
+  color: #aaa;
+}

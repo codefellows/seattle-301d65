@@ -1,0 +1,9 @@
+@import reset;
+
+* {
+  font-family: times;
+}
+
+body {
+  background: #fff;
+}
