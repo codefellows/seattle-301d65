@@ -1,0 +1,46 @@
+hr {
+  background-image: url('../img/hr.png');
+}
+
+.print, .date {
+  color: #a9a8a5;
+  font-family: 'Abel', sans-serif;
+  font-size: .8em;
+}
+
+.print {
+  text-decoration: none;
+}
+
+input {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.recipe {
+  letter-spacing: .1em;
+  font-family: 'Patrick Hand', cursive;
+  color: #666a42;
+  background-image: url("img/list-bg.png");
+}
+
+aside h3 {
+  font-size: 1.6em;
+  color: #555;
+}
+
+aside button {
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  background: #b8705a;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+}
+
+section hr {
+  border-bottom: 1px solid #eee;
+}
+
+footer section p{
+  color: #aaa;
+}
