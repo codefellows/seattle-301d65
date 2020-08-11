@@ -108,7 +108,7 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 
 
 
-let sum = function(a, b, c, d) {
+let sum = (a, b, c, d) => {
   return a + b + c + d;
 };
 
@@ -128,7 +128,7 @@ let objectLit = function() {
 console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
+let sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
@@ -138,7 +138,7 @@ let sumAndProduct = function(a, b) {
 console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
+let message = (name) => {
   return `Hello, ${name}!`;
 };
 
@@ -193,7 +193,9 @@ Student.prototype.scope = function() {
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(joe.scope());
 
-Student.prototype.scopeArrow = () => console.log(this);
+Student.prototype.scopeArrow = function() {
+  console.log(this);
+};
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(joe.scopeArrow());
@@ -206,4 +208,4 @@ console.log(joe.scopeArrow());
 //    It is also undefined, but brings up a whole mess that I don't wholly understand into the console.
 
 // 3. Explain why "this" is different when an arrow function is used.
-//  It's console logging everything -- the target is imprecise. We're not just getting name, age, hometown.
+//  'This' does not work because an arrow function cannot be used with a constructor function, as it's not bound to that constructor. Instead, it ends up pointing to the window object.
