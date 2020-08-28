@@ -390,7 +390,7 @@ Technical merit is graded based on the following criteria:
 - Data is persisted in a SQL database
   - PostgreSQL database provisioned on the Heroku instance
   - Logical schemas with appropriate data types
-  - Data model that maps to the problem domain and uses relational connections, such as joins, as necessary
+  - Data model that maps to the problem domain
   - Ability to read records from the database
   - Ability to create new resources and persist them in the database
   - Ability to either update or delete records from the database
